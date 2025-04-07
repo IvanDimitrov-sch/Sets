@@ -28,7 +28,7 @@
 
             if (list.Contains(name))
             {
-                Console.WriteLine("Exists")";
+                Console.WriteLine("Exists");
             }
             else
             {
@@ -39,8 +39,8 @@
         static void Zad3()
         {
             HashSet<string> list = new HashSet<string>();
-            list = Console.ReadLine().Split(' ').ToHashSet();
-            Console.WriteLine($"The sentence has {list.Count} words");
+            list = Console.ReadLine().Split(' ').Select(x => x.ToLower()).ToHashSet();
+            Console.WriteLine($"The sentence has {list.Count} words and they are {String.Join(',', list)}");
         }
         static void Zad4()
         {

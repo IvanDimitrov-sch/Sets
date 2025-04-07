@@ -6,6 +6,7 @@
         {
             Zad1();
             Zad2();
+            Zad3();
         }
 
         static void Zad1()
@@ -37,7 +38,9 @@
         }
         static void Zad3()
         {
-
+            HashSet<string> list = new HashSet<string>();
+            list = Console.ReadLine().Split(' ').ToHashSet();
+            Console.WriteLine($"The sentence has {list.Count} words");
         }
         static void Zad4()
         {
